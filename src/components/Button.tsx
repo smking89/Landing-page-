@@ -10,9 +10,9 @@ const base =
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-fg text-bg shadow-[inset_0_1px_0_rgb(255_255_255/0.6),0_8px_24px_-12px_rgb(255_255_255/0.5)] hover:bg-white',
-  secondary: 'depth relative bg-white/[0.04] text-fg hover:bg-white/[0.08] hover:[--depth-edge:rgb(255_236_224/0.24)]',
-  ghost: 'text-muted hover:bg-white/[0.06] hover:text-fg',
+    'bg-fg text-bg shadow-[inset_0_1px_0_rgb(255_255_255/0.14),0_10px_24px_-14px_rgb(20_19_17/0.55)] hover:bg-[#2b2825]',
+  secondary: 'depth relative bg-fg/[0.04] text-fg hover:bg-fg/[0.08] hover:[--depth-edge:rgb(20_19_17/0.24)]',
+  ghost: 'text-muted hover:bg-fg/[0.06] hover:text-fg',
 }
 
 // Heights match the inputs they sit beside: md = 44px, lg = 52px.

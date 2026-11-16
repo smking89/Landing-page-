@@ -32,7 +32,7 @@ export function Pricing() {
                   {selected && (
                     <motion.span
                       layoutId="billing-pill"
-                      className="absolute inset-0 -z-10 rounded-[10px] bg-white/[0.08]"
+                      className="absolute inset-0 -z-10 rounded-[10px] bg-fg/[0.08]"
                       transition={{ type: 'spring', stiffness: 500, damping: 40 }}
                     />
                   )}
@@ -70,7 +70,7 @@ export function Pricing() {
                   <ul className="mt-7 flex flex-col gap-3 border-t border-line pt-7">
                     {tier.features.map((f) => (
                       <li key={f} className="flex items-start gap-3 text-[14px] text-fg/90">
-                        <span className="mt-0.5 grid size-4.5 shrink-0 place-items-center rounded-[6px] bg-white/[0.08]">
+                        <span className="mt-0.5 grid size-4.5 shrink-0 place-items-center rounded-[6px] bg-fg/[0.08]">
                           <Check className="size-3" />
                         </span>
                         {f}

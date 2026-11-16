@@ -34,7 +34,7 @@ const toneClass: Record<string, string> = {
   accent: 'bg-accent/15 text-accent',
   violet: 'bg-accent-3/15 text-accent-3',
   teal: 'bg-accent-2/15 text-accent-2',
-  muted: 'bg-white/[0.06] text-muted',
+  muted: 'bg-fg/[0.06] text-muted',
 }
 
 export function Monogram({ initials, hue, className }: { initials: string; hue: number; className?: string }) {
@@ -65,7 +65,7 @@ export function DashboardMock() {
               key={label}
               className={cx(
                 'flex h-8 items-center gap-2 rounded-[10px] px-2 text-[12px]',
-                active ? 'bg-white/[0.07] text-fg' : 'text-muted',
+                active ? 'bg-fg/[0.07] text-fg' : 'text-muted',
               )}
             >
               <Icon className="size-3.5" />
@@ -98,8 +98,8 @@ export function DashboardMock() {
             <span className="text-[13px] font-medium">This week</span>
             <span className="hidden text-[12px] text-faint sm:inline">Oct 20 to 24</span>
           </div>
-          <div className="depth relative flex items-center gap-1 rounded-[10px] bg-white/[0.04] p-0.5 text-[11px]">
-            <span className="rounded-[8px] bg-white/[0.08] px-2 py-1 text-fg">Board</span>
+          <div className="depth relative flex items-center gap-1 rounded-[10px] bg-fg/[0.04] p-0.5 text-[11px]">
+            <span className="rounded-[8px] bg-fg/[0.08] px-2 py-1 text-fg">Board</span>
             <span className="px-2 py-1 text-muted">List</span>
             <span className="px-2 py-1 text-muted">Timeline</span>
           </div>
@@ -116,7 +116,7 @@ export function DashboardMock() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 + i * 0.08, duration: 0.5 }}
-              className="depth relative rounded-[14px] bg-white/[0.02] p-3"
+              className="depth relative rounded-[14px] bg-fg/[0.02] p-3"
             >
               <p className="text-[11px] text-muted">{kpi.label}</p>
               <div className="mt-1 flex items-baseline gap-2">
@@ -126,7 +126,7 @@ export function DashboardMock() {
             </motion.div>
           ))}
 
-          <div className="depth relative col-span-3 flex flex-col rounded-[14px] bg-white/[0.02] p-3 md:col-span-2">
+          <div className="depth relative col-span-3 flex flex-col rounded-[14px] bg-fg/[0.02] p-3 md:col-span-2">
             <div className="flex items-center justify-between">
               <p className="text-[12px] font-medium">Throughput</p>
               <span className="text-[11px] text-faint">Last 30 days</span>
@@ -146,7 +146,7 @@ export function DashboardMock() {
             </div>
           </div>
 
-          <div className="depth relative col-span-3 hidden flex-col rounded-[14px] bg-white/[0.02] p-3 md:col-span-1 md:flex">
+          <div className="depth relative col-span-3 hidden flex-col rounded-[14px] bg-fg/[0.02] p-3 md:col-span-1 md:flex">
             <p className="text-[12px] font-medium">Needs you</p>
             <ul className="mt-2 flex flex-col gap-2">
               {rows.map((row, i) => (

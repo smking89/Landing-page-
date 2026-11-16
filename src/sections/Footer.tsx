@@ -49,7 +49,7 @@ export function Footer() {
                 key={s.label}
                 href="#"
                 aria-label={s.label}
-                className="grid size-9 place-items-center rounded-[11px] text-muted transition-colors hover:bg-white/[0.06] hover:text-fg"
+                className="grid size-9 place-items-center rounded-[11px] text-muted transition-colors hover:bg-fg/[0.06] hover:text-fg"
               >
                 <svg viewBox="0 0 24 24" className="size-4" fill="currentColor" aria-hidden>
                   <path d={s.path} />

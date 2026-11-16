@@ -26,7 +26,7 @@ export function Features() {
             const Visual = visuals[item.key]
             return (
               <Reveal key={item.key} delay={(i % 3) * 0.08} className={cx(item.span === 2 && 'md:col-span-2')}>
-                <article className="depth group relative flex h-full flex-col overflow-hidden rounded-card bg-surface shadow-glow transition-colors duration-300 hover:[--depth-edge:rgb(255_236_224/0.22)]">
+                <article className="depth group relative flex h-full flex-col overflow-hidden rounded-card bg-surface shadow-glow transition-colors duration-300 hover:[--depth-edge:rgb(20_19_17/0.22)]">
                   <div className="relative flex-1 overflow-hidden">
                     <Visual />
                   </div>
@@ -64,7 +64,7 @@ function CollabVisual() {
     <div className="absolute inset-0 p-6 pb-0">
       <div className="depth relative h-[calc(100%+2px)] overflow-hidden rounded-t-[16px] bg-bg/50 p-5">
         <div className="flex items-center gap-2">
-          <div className="h-2.5 w-28 rounded-[4px] bg-white/[0.12]" />
+          <div className="h-2.5 w-28 rounded-[4px] bg-fg/[0.12]" />
           <div className="ml-auto flex">
             <Monogram initials="MC" hue={250} className="ring-2 ring-surface" />
             <Monogram initials="DO" hue={170} className="-ml-2 ring-2 ring-surface" />
@@ -72,11 +72,11 @@ function CollabVisual() {
           </div>
         </div>
         <div className="mt-5 space-y-2.5">
-          <div className="h-2 w-[92%] rounded-[4px] bg-white/[0.08]" />
-          <div className="h-2 w-[76%] rounded-[4px] bg-white/[0.08]" />
+          <div className="h-2 w-[92%] rounded-[4px] bg-fg/[0.08]" />
+          <div className="h-2 w-[76%] rounded-[4px] bg-fg/[0.08]" />
           <div className="h-2 w-[84%] rounded-[4px] bg-accent/30" />
-          <div className="h-2 w-[60%] rounded-[4px] bg-white/[0.08]" />
-          <div className="h-2 w-[70%] rounded-[4px] bg-white/[0.08]" />
+          <div className="h-2 w-[60%] rounded-[4px] bg-fg/[0.08]" />
+          <div className="h-2 w-[70%] rounded-[4px] bg-fg/[0.08]" />
         </div>
         <div className="depth absolute bottom-5 left-5 inline-flex max-w-[280px] items-start gap-2 rounded-[12px] bg-surface-2 p-2.5">
           <Monogram initials="SM" hue={20} className="size-5 text-[9px]" />

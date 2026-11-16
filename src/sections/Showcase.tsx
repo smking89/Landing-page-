@@ -27,7 +27,7 @@ export function Showcase() {
                       aria-pressed={isActive}
                       className={cx(
                         'relative w-full rounded-card-sm px-5 py-4 text-left transition-colors',
-                        isActive ? 'bg-surface' : 'hover:bg-white/[0.03]',
+                        isActive ? 'bg-surface' : 'hover:bg-fg/[0.03]',
                       )}
                     >
                       {isActive && (
@@ -93,7 +93,7 @@ function InboxPanel() {
           transition={{ delay: i * 0.06 }}
           className={cx(
             'depth relative flex items-center gap-3 rounded-[14px] px-4 py-3',
-            i === 0 ? 'bg-white/[0.04] [--depth-edge:rgb(255_236_224/0.22)]' : '[--depth-edge:var(--color-line)]',
+            i === 0 ? 'bg-fg/[0.04] [--depth-edge:rgb(20_19_17/0.22)]' : '[--depth-edge:var(--color-line)]',
           )}
         >
           <Monogram initials={item.who} hue={item.hue} className="size-7 text-[11px]" />
@@ -127,7 +127,7 @@ function BoardPanel() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: ci * 0.05 + i * 0.06 }}
-              className="depth relative rounded-[12px] bg-white/[0.03] p-3"
+              className="depth relative rounded-[12px] bg-fg/[0.03] p-3"
             >
               <p className="text-[12px] leading-snug sm:text-[13px]">{card}</p>
               <div className="mt-3 flex items-center justify-between">
