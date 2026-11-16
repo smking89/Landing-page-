@@ -42,7 +42,7 @@ export function Nav() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="inline-flex h-9 items-center rounded-[12px] px-3 text-[14px] text-muted transition-colors hover:bg-white/[0.06] hover:text-fg"
+                className="inline-flex h-9 items-center rounded-[12px] px-3 text-[14px] text-muted transition-colors hover:bg-fg/[0.05] hover:text-fg"
               >
                 {link.label}
               </a>
@@ -62,7 +62,7 @@ export function Nav() {
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="grid size-9 place-items-center rounded-[12px] text-fg transition-colors hover:bg-white/[0.06] md:hidden"
+          className="grid size-9 place-items-center rounded-[12px] text-fg transition-colors hover:bg-fg/[0.05] md:hidden"
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
@@ -84,7 +84,7 @@ export function Nav() {
                   <a
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="flex h-12 items-center rounded-control px-3 text-[16px] text-fg transition-colors hover:bg-white/[0.06]"
+                    className="flex h-12 items-center rounded-control px-3 text-[16px] text-fg transition-colors hover:bg-fg/[0.05]"
                   >
                     {link.label}
                   </a>
