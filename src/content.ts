@@ -24,15 +24,15 @@ export const hero = {
   title: ['Describe the build.', 'Aiden ships the bundle'],
   highlight: 'bundle',
   description:
-    'Monuments, PBR skin sets, maps, server plugins and Discord bots — generated from one brief, validated through three gates, and delivered with a manifest of SHA-256 hashes.',
+    'Monuments, PBR skin sets, maps, server plugins and Discord bots for Rust (PC and Console Edition), Minecraft and DayZ — generated from one brief, validated through three gates, delivered with a manifest of SHA-256 hashes.',
   primary: { label: 'Open Aiden', href: app },
   secondary: { label: 'See the previews', href: '#showcase' },
-  footnote: 'Rust, Minecraft and DayZ. Powered by the koba_engine pipeline — no prompt keys.',
+  footnote: 'Rust PC and console, Minecraft and DayZ. Built on the koba_engine pipeline — no prompt keys.',
 }
 
 export const logos = {
   label: 'Targets Aiden builds for',
-  items: ['Oxide', 'Carbon', 'Paper', 'Spigot', 'DayZ', 'Discord', 'koba_engine', 'Freebuff Sites'],
+  items: ['Oxide', 'Carbon', 'Console Edition', 'Paper', 'Spigot', 'DayZ', 'Discord', 'koba_engine'],
 }
 
 export const features = {
@@ -49,13 +49,13 @@ export const features = {
     {
       key: 'games',
       title: 'Pick the game first',
-      description: 'Rust assets, Minecraft Maven plugins, DayZ config layers.',
+      description: 'Rust assets and plugins, Minecraft plugins, DayZ moderation — and one Discord bot that covers all three.',
       span: 1,
     },
     {
       key: 'plugins',
       title: 'Plugins and bots without an engine',
-      description: 'Generated in the app, so they work even on the hosted site.',
+      description: 'C# plugin source or a discord.py bot, generated in the app, so both work even with no engine attached.',
       span: 1,
     },
     {
@@ -73,7 +73,7 @@ export const steps = {
   items: [
     {
       title: 'Describe it',
-      description: 'One brief, in your words: a base, a skin, a map, a plugin or a Discord bot.',
+      description: 'One brief, in your words: a base, a skin, a map, a plugin or a Discord bot. For Rust, say whether the server is PC or Console Edition.',
     },
     {
       title: 'Choose the game and model',
@@ -114,6 +114,22 @@ export const showcase = {
       alt: 'Map preview drawn by Terra',
       meta: ['world.map', 'world.json', 'World_manifest.json'],
     },
+    {
+      key: 'plugin',
+      title: 'Plugin',
+      description: 'C# plugin source with its config, lang/en messages and a hashed manifest, packaged as a ZIP.',
+      image: '/previews/plugin.svg',
+      alt: 'Plugin package preview drawn by the Plugin model',
+      meta: ['plugin.cs', 'config/plugin.json', 'plugin-manifest.json'],
+    },
+    {
+      key: 'bot',
+      title: 'Discord Bot',
+      description: 'discord.py bot with command cogs and a working RCON client — PC or Console Edition, detected from the brief.',
+      image: '/previews/bot.svg',
+      alt: 'Discord bot package preview drawn by the Discord Bot model',
+      meta: ['bot.py', 'cogs/rust.py', 'server_manifest.json'],
+    },
   ],
 }
 
@@ -129,7 +145,7 @@ export const faq = {
   items: [
     {
       q: 'Which games does Aiden build for?',
-      a: 'Rust, Minecraft and DayZ. Those are the three the pipeline can really produce for: Rust has the asset models and server plugins, Minecraft has Paper/Spigot plugins as a Maven project, and DayZ has JSON config layers. The game picker only offers what has a working generator behind it.',
+      a: 'Rust, Minecraft and DayZ. Those are the three the pipeline can really produce for: Rust has the asset models and server plugins, Minecraft has Paper/Spigot plugins as a Maven project, and DayZ has its moderation layer. For Rust that covers PC dedicated servers and Console Edition: a bot brief that names a console, a PS5 or Xbox, or a console host gets the console command set automatically. The game picker only offers what has a working generator behind it.',
     },
     {
       q: 'Do I have to run the engine myself?',
@@ -142,6 +158,10 @@ export const faq = {
     {
       q: 'What exactly is in the bundle?',
       a: 'The project files, a README for installing them, and a manifest listing every file with its SHA-256. The delivery card shows the same hashes, so a package can be checked after it is moved to a server.',
+    },
+    {
+      q: 'Can I share a chat or a project?',
+      a: 'Yes. Put chats in a project and invite people with an eight-character code: it works once and expires after 24 hours. A project can hand out three codes in a row, then waits five minutes before it will generate more.',
     },
     {
       q: 'How do I use my own textures or images?',
@@ -171,5 +191,5 @@ export const footer = {
     { title: 'Legal', links: ['Privacy', 'Terms'] },
   ],
   legal: `© ${new Date().getFullYear()} Aiden`,
-  github: 'https://github.com/smking89/aidenai',
+  github: 'https://github.com/smking89/aiden',
 }

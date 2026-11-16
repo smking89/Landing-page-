@@ -5,7 +5,7 @@ import { LogoMark } from './Logo'
 import { cx } from '../lib/cx'
 
 const games = [
-  { name: 'Rust', target: 'Oxide · Carbon', active: true },
+  { name: 'Rust', target: 'PC · Console', active: true },
   { name: 'Minecraft', target: 'Paper · Spigot' },
   { name: 'DayZ', target: 'JSON layers' },
 ]
