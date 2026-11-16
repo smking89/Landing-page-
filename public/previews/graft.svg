@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Top-down monument preview">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#d6d2c8" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#efede7" />
+  <rect width="800" height="500" fill="url(#grid)" />
+  <g stroke="#1b1a17" stroke-width="3" fill="#ffffff">
+    <rect x="120" y="110" width="260" height="170" rx="6" />
+    <rect x="410" y="150" width="130" height="130" rx="4" />
+    <rect x="120" y="300" width="150" height="90" rx="4" />
+    <rect x="300" y="310" width="240" height="80" rx="4" />
+  </g>
+  <g stroke="#F80801" stroke-width="4" fill="none">
+    <path d="M250 110v170" />
+    <path d="M145 195h210" />
+    <circle cx="475" cy="215" r="34" />
+    <path d="M540 280h120v90h-120z" />
+    <path d="M120 390h420" stroke-dasharray="10 8" />
+  </g>
+  <g fill="#6b6760" font-family="ui-monospace, monospace" font-size="12">
+    <text x="128" y="100">BLOCK A · ELEVATOR LOBBY</text>
+    <text x="418" y="140">RECYCLER</text>
+    <text x="128" y="290">SAM 01</text>
+    <text x="308" y="302">GARAGE</text>
+  </g>
+</svg>

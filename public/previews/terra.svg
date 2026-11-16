@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Terrain map preview">
+  <rect width="800" height="500" fill="#efede7" />
+  <g fill="none" stroke="#c9c4b8" stroke-width="2">
+    <path d="M-20 380c120-60 200 40 320 10s220-120 340-70 200 40 220 20" />
+    <path d="M-20 410c120-60 200 40 320 10s220-120 340-70 200 40 220 20" />
+    <path d="M-20 440c120-60 200 40 320 10s220-120 340-70 200 40 220 20" />
+    <path d="M-20 350c120-60 200 40 320 10s220-120 340-70 200 40 220 20" />
+    <path d="M-20 320c120-60 200 40 320 10s220-120 340-70 200 40 220 20" />
+  </g>
+  <g fill="#ffffff" stroke="#1b1a17" stroke-width="3">
+    <path d="M120 120h150l20 60-40 70H130l-30-70z" />
+    <path d="M520 90h170l30 80-50 90H540l-40-90z" />
+  </g>
+  <g fill="none" stroke="#F80801" stroke-width="4">
+    <path d="M300 200c60-30 120 20 170-10" />
+    <path d="M180 300c90 40 210-10 300 30s150 30 230 10" />
+  </g>
+  <g fill="#6b6760" font-family="ui-monospace, monospace" font-size="12">
+    <text x="132" y="110">BIOME · TEMPERATE</text>
+    <text x="532" y="80">MONUMENT</text>
+    <text x="330" y="190">RIVER A</text>
+    <text x="60" y="470">SEED 1337 · 3500</text>
+  </g>
+</svg>
