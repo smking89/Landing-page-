@@ -85,24 +85,31 @@ export const steps = {
   ],
 }
 
+// Screenshots of the running app, captured from the real build flow.
 export const showcase = {
-  eyebrow: 'One workspace, many views',
-  title: 'The same work, seen your way',
+  eyebrow: 'Inside Aiden',
+  title: 'What a build actually gives you',
   tabs: [
     {
-      key: 'inbox',
-      title: 'Inbox',
-      description: 'A single stream of what needs you, ordered by what matters.',
+      key: 'builds',
+      title: 'Bundles, hashed',
+      description: 'A finished build lands as a delivery card: every file, its size, a SHA-256 per file and one digest for the bundle.',
+      image: '/previews/build.png',
+      alt: 'A Graft monument build delivered as 15 hashed files with a download button',
     },
     {
-      key: 'board',
-      title: 'Board',
-      description: 'Drag work across stages. Limits and owners stay visible.',
+      key: 'models',
+      title: 'Five models',
+      description: 'Graft, Vest, Terra, Plugin and Discord Bot, each building for the game you picked. No options that cannot run.',
+      image: '/previews/models.png',
+      alt: 'The model picker open over a Rust chat, listing all five models',
     },
     {
-      key: 'report',
-      title: 'Reports',
-      description: 'Velocity, cycle time and risk without building a spreadsheet.',
+      key: 'projects',
+      title: 'Shared projects',
+      description: 'Group builds, see who is in, and invite people with a single-use code that expires in a day.',
+      image: '/previews/projects.png',
+      alt: 'A shared project page with its member list, invite button and chats',
     },
   ],
 }
