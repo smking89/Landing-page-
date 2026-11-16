@@ -1,67 +1,66 @@
-// All copy lives here so the page can be re-themed without touching layout.
-// Sections read from this file; remove a section by deleting it from App.tsx.
+// All copy lives here so the page can be re-themed for a product without
+// touching layout. Sections read from this file; remove a section by deleting
+// it from App.tsx.
 
+// Where the app lives; every call to action that leaves the page points here.
 const app = 'https://site-cbf332003f704a6f9b879cb3927c8a42.freebuff.page'
 
 export const brand = {
   name: 'Aiden',
-  tagline: 'Describe it. Aiden builds it.',
+  tagline: 'The calm workspace for teams that ship',
 }
 
 export const nav = {
   links: [
-    { label: 'What it builds', href: '#features' },
-    { label: 'Previews', href: '#showcase' },
+    { label: 'Product', href: '#features' },
     { label: 'How it works', href: '#how' },
-    { label: 'FAQ', href: '#faq' },
+    { label: 'Customers', href: '#customers' },
+    { label: 'Pricing', href: '#pricing' },
   ],
   signIn: { label: 'Sign in', href: app },
-  cta: { label: 'Open Aiden', href: app },
+  cta: { label: 'Get started', href: '#cta' },
 }
 
 export const hero = {
-  badge: '5 models · 3 games · 3 gates',
-  title: ['Describe the build.', 'Aiden ships the bundle'],
-  highlight: 'bundle',
+  badge: 'Now in public beta',
+  title: ['Plan, build and ship', 'from one calm place'],
+  highlight: 'calm',
   description:
-    'Monuments, PBR skin sets, maps, server plugins and Discord bots for Rust (PC and Console Edition), Minecraft and DayZ — generated from one brief, validated through three gates, delivered with a manifest of SHA-256 hashes.',
-  primary: { label: 'Open Aiden', href: app },
-  secondary: { label: 'See the previews', href: '#showcase' },
-  footnote: 'Rust PC and console, Minecraft and DayZ. Built on the koba_engine pipeline — no prompt keys.',
+    'Bring roadmaps, work and conversations together. Fewer tabs, fewer meetings, and a team that always knows what matters this week.',
+  primary: { label: 'Start for free', href: '#cta' },
+  secondary: { label: 'See how it works', href: '#how' },
+  footnote: 'Free for up to 10 people. No card required.',
 }
 
-export const logos = {
-  label: 'Targets Aiden builds for',
-  items: ['Oxide', 'Carbon', 'Console Edition', 'Paper', 'Spigot', 'DayZ', 'Discord', 'koba_engine'],
-}
+export const logos = ['Northwind', 'Vertex', 'Lumen', 'Halcyon', 'Fathom', 'Orbital', 'Meridian', 'Quill']
 
 export const features = {
-  eyebrow: 'What it builds',
-  title: 'One brief, five kinds of build',
-  description: 'Every model produces real project files, hashed and packaged — not screenshots of files.',
+  eyebrow: 'Everything in one place',
+  title: 'Built for the way modern teams work',
+  description: 'Each part is simple on its own. Together they replace a stack of tools.',
   items: [
     {
-      key: 'assets',
-      title: 'Assets that drop into the server',
-      description: 'Prefab monuments with wired sockets, PBR skin sets and playable maps.',
+      key: 'collab',
+      title: 'Work together in real time',
+      description: 'Presence, cursors and comments on every document and board.',
       span: 2,
     },
     {
-      key: 'games',
-      title: 'Pick the game first',
-      description: 'Rust assets and plugins, Minecraft plugins, DayZ moderation — and one Discord bot that covers all three.',
+      key: 'automation',
+      title: 'Automate the busywork',
+      description: 'Route, assign and notify with rules you write in plain language.',
       span: 1,
     },
     {
-      key: 'plugins',
-      title: 'Plugins and bots without an engine',
-      description: 'C# plugin source or a discord.py bot, generated in the app, so both work even with no engine attached.',
+      key: 'analytics',
+      title: 'See progress at a glance',
+      description: 'Live dashboards that update as the work moves.',
       span: 1,
     },
     {
-      key: 'manifest',
-      title: 'Every file hashed',
-      description: 'A SHA-256 per file and one bundle digest on the delivery card.',
+      key: 'integrations',
+      title: 'Connects to your stack',
+      description: 'GitHub, Slack, Figma, Linear and 60 more, ready in a click.',
       span: 2,
     },
   ],
@@ -69,127 +68,182 @@ export const features = {
 
 export const steps = {
   eyebrow: 'How it works',
-  title: 'From a sentence to a server-ready bundle',
+  title: 'Up and running before lunch',
   items: [
     {
-      title: 'Describe it',
-      description: 'One brief, in your words: a base, a skin, a map, a plugin or a Discord bot. For Rust, say whether the server is PC or Console Edition.',
+      title: 'Import what you have',
+      description: 'Bring projects from Jira, Notion or a spreadsheet. We keep the history.',
     },
     {
-      title: 'Choose the game and model',
-      description: 'The game decides the target and which models can build for it. No dead options.',
+      title: 'Shape the week',
+      description: 'Turn goals into a short, visible plan everyone can see and own.',
     },
     {
-      title: 'Pass the gates and take the bundle',
-      description: 'Master Plan, Sub-Master, then Gate 1, 2 and 3. The ZIP arrives with its manifest.',
+      title: 'Ship and learn',
+      description: 'Updates write themselves from the work. Review, adjust, repeat.',
     },
   ],
 }
 
 export const showcase = {
-  eyebrow: 'The previews',
-  title: 'Previews are generated, not mocked',
+  eyebrow: 'One workspace, many views',
+  title: 'The same work, seen your way',
   tabs: [
     {
-      key: 'graft',
-      title: 'Graft',
-      description: 'Top-down monument layout: rooms, sockets, spawn points and a verified vanilla ruleset.',
-      image: '/previews/graft.svg',
-      alt: 'Top-down monument preview drawn by Graft',
-      meta: ['bunker.prefab', 'bunker.json', 'Bundle_manifest.json'],
+      key: 'inbox',
+      title: 'Inbox',
+      description: 'A single stream of what needs you, ordered by what matters.',
     },
     {
-      key: 'vest',
-      title: 'Vest',
-      description: 'PBR skin set: albedo, normal, smoothness, ambient occlusion and UV masks, packed together.',
-      image: '/previews/vest.svg',
-      alt: 'Item skin preview drawn by Vest',
-      meta: ['skin_albedo.png', 'skin_normal.png', 'Skinset_manifest.json'],
+      key: 'board',
+      title: 'Board',
+      description: 'Drag work across stages. Limits and owners stay visible.',
     },
     {
-      key: 'terra',
-      title: 'Terra',
-      description: 'Terrain, biome and river pass with monument placement checked before the map is written.',
-      image: '/previews/terra.svg',
-      alt: 'Map preview drawn by Terra',
-      meta: ['world.map', 'world.json', 'World_manifest.json'],
-    },
-    {
-      key: 'plugin',
-      title: 'Plugin',
-      description: 'C# plugin source with its config, lang/en messages and a hashed manifest, packaged as a ZIP.',
-      image: '/previews/plugin.svg',
-      alt: 'Plugin package preview drawn by the Plugin model',
-      meta: ['plugin.cs', 'config/plugin.json', 'plugin-manifest.json'],
-    },
-    {
-      key: 'bot',
-      title: 'Discord Bot',
-      description: 'discord.py bot with command cogs and a working RCON client — PC or Console Edition, detected from the brief.',
-      image: '/previews/bot.svg',
-      alt: 'Discord bot package preview drawn by the Discord Bot model',
-      meta: ['bot.py', 'cogs/rust.py', 'server_manifest.json'],
+      key: 'report',
+      title: 'Reports',
+      description: 'Velocity, cycle time and risk without building a spreadsheet.',
     },
   ],
 }
 
-export const metrics: { value: number; label: string; suffix?: string; decimals?: number }[] = [
-  { value: 3, label: 'Games supported' },
-  { value: 5, label: 'Build models' },
-  { value: 3, label: 'Validation gates' },
-  { value: 100, suffix: '%', label: 'Files with a SHA-256' },
+export const metrics = [
+  { value: 12000, suffix: '+', label: 'Teams on the platform' },
+  { value: 4.9, decimals: 1, label: 'Average rating' },
+  { value: 38, suffix: '%', label: 'Fewer status meetings' },
+  { value: 99.99, decimals: 2, suffix: '%', label: 'Uptime last 12 months' },
 ]
+
+export const testimonials = {
+  eyebrow: 'Customers',
+  title: 'Teams that switched rarely go back',
+  items: [
+    {
+      quote:
+        'We replaced four tools in a week. The surprising part was how quiet it felt afterwards. People actually know what to work on.',
+      name: 'Maya Chen',
+      role: 'Head of Operations, Northwind',
+      hue: 250,
+    },
+    {
+      quote: 'The automations alone saved our team a full day every week. Set them up once and forget they exist.',
+      name: 'Daniel Okafor',
+      role: 'Engineering Manager, Vertex',
+      hue: 170,
+    },
+    {
+      quote: 'I open it, I see the week, I close it. That is the whole review. It is the first planning tool I do not resent.',
+      name: 'Sofia Marin',
+      role: 'Product Lead, Lumen',
+      hue: 20,
+    },
+    {
+      quote: 'Reports used to take me half a Friday. Now leadership reads a live page and asks better questions.',
+      name: 'Jonas Weber',
+      role: 'Director of Delivery, Halcyon',
+      hue: 300,
+    },
+    {
+      quote: 'Onboarding new hires went from two weeks of context to two days. Everything they need is already in the workspace.',
+      name: 'Priya Natarajan',
+      role: 'VP Engineering, Fathom',
+      hue: 120,
+    },
+    {
+      quote: 'Fast, focused and thoughtfully designed. It gets out of the way, which is the highest compliment I can give software.',
+      name: 'Lucas Ferreira',
+      role: 'Founder, Orbital',
+      hue: 40,
+    },
+  ],
+}
+
+export const pricing = {
+  eyebrow: 'Pricing',
+  title: 'Simple pricing that grows with you',
+  description: 'Start free. Upgrade when the team does.',
+  yearlyNote: 'Two months free',
+  tiers: [
+    {
+      name: 'Starter',
+      monthly: 0,
+      yearly: 0,
+      description: 'For small teams getting organised.',
+      cta: 'Start for free',
+      features: ['Up to 10 people', 'Unlimited projects', 'Boards and docs', 'Community support'],
+    },
+    {
+      name: 'Team',
+      monthly: 12,
+      yearly: 10,
+      description: 'For teams that need automation and reporting.',
+      cta: 'Start a 14 day trial',
+      popular: true,
+      features: [
+        'Everything in Starter',
+        'Automations and rules',
+        'Live reports and goals',
+        'Guests and client access',
+        'Priority support',
+      ],
+    },
+    {
+      name: 'Business',
+      monthly: 24,
+      yearly: 20,
+      description: 'For organisations with security needs.',
+      cta: 'Talk to sales',
+      features: ['Everything in Team', 'SSO and SCIM', 'Audit log and data residency', 'Custom roles', 'Dedicated success manager'],
+    },
+  ],
+}
 
 export const faq = {
   title: 'Questions, answered',
   items: [
     {
-      q: 'Which games does Aiden build for?',
-      a: 'Rust, Minecraft and DayZ. Those are the three the pipeline can really produce for: Rust has the asset models and server plugins, Minecraft has Paper/Spigot plugins as a Maven project, and DayZ has its moderation layer. For Rust that covers PC dedicated servers and Console Edition: a bot brief that names a console, a PS5 or Xbox, or a console host gets the console command set automatically. The game picker only offers what has a working generator behind it.',
+      q: 'Can I import from the tools we already use?',
+      a: 'Yes. One-click importers cover Jira, Asana, Trello, Notion and Linear, and CSV import covers everything else. Comments, attachments and history come along.',
     },
     {
-      q: 'Do I have to run the engine myself?',
-      a: 'Only for the asset models — Graft, Vest and Terra call koba_engine and need a reachable engine. Plugins and Discord bots are generated inside the app, so they work on the hosted site with nothing attached.',
+      q: 'Is there a free plan?',
+      a: 'The Starter plan is free for up to 10 people with unlimited projects. It is not a trial and it does not expire.',
     },
     {
-      q: 'Is the generated code real?',
-      a: 'Yes. A Rust plugin is C# with its config, lang files and manifest. Minecraft is a Maven project you can build into a jar. DayZ is a JSON layer. A Discord bot is a Python project with bot.py, cogs, an environment template and a deployment README.',
+      q: 'How does billing work for guests?',
+      a: 'Guests and clients are free on Team and Business plans. You only pay for members who can edit.',
     },
     {
-      q: 'What exactly is in the bundle?',
-      a: 'The project files, a README for installing them, and a manifest listing every file with its SHA-256. The delivery card shows the same hashes, so a package can be checked after it is moved to a server.',
+      q: 'Where is my data stored?',
+      a: 'In the region you choose at signup, encrypted at rest and in transit. Business plans can pin data to the EU or US.',
     },
     {
-      q: 'Can I share a chat or a project?',
-      a: 'Yes. Put chats in a project and invite people with an eight-character code: it works once and expires after 24 hours. A project can hand out three codes in a row, then waits five minutes before it will generate more.',
+      q: 'Can I cancel at any time?',
+      a: 'Yes. Downgrade or cancel from your billing settings and your workspace stays readable forever.',
     },
     {
-      q: 'How do I use my own textures or images?',
-      a: 'With a raw direct link. Upload the file to a private Discord channel, right-click it, Copy Link, and check the URL ends in .png, .jpg or .json — or upload to Imgur, right-click the image itself and Copy Image Address. A generated bot can check links for you with /asset-link.',
-    },
-    {
-      q: 'Can a bot use a game studio name?',
-      a: 'No. Protected names — Facepunch, Double Eleven, Mojang, Rustoria — are refused before anything is packaged, so a build cannot be published under a studio it does not belong to.',
+      q: 'Do you offer discounts for startups or nonprofits?',
+      a: 'We do. Eligible startups get the Team plan free for a year, and nonprofits get 50% off every plan.',
     },
   ],
 }
 
 export const cta = {
-  title: 'Describe the next thing you need',
-  description: 'Open Aiden, pick the game and the model, and take the bundle.',
-  primary: { label: 'Open Aiden', href: app },
-  secondary: { label: 'Read the pipeline', href: '#how' },
-  note: 'Runs in the browser. Plugins and Discord bots need no engine key.',
+  title: 'Give your team a calmer week',
+  description: 'Join thousands of teams planning and shipping from one place.',
+  placeholder: 'you@company.com',
+  button: 'Get early access',
+  success: 'Demo complete. No subscription was saved.',
 }
 
 export const footer = {
-  blurb: 'Game assets, server plugins and Discord bots, generated from a brief and delivered with their hashes.',
+  blurb: 'A calm workspace for teams that ship.',
   columns: [
-    { title: 'Build', links: ['Graft', 'Vest', 'Terra', 'Plugin', 'Discord Bot'] },
-    { title: 'Games', links: ['Rust', 'Minecraft', 'DayZ'] },
-    { title: 'Resources', links: ['koba_engine', 'Previews', 'FAQ'] },
-    { title: 'Legal', links: ['Privacy', 'Terms'] },
+    { title: 'Product', links: ['Features', 'Integrations', 'Changelog', 'Pricing', 'Security'] },
+    { title: 'Company', links: ['About', 'Careers', 'Blog', 'Press', 'Contact'] },
+    { title: 'Resources', links: ['Docs', 'Guides', 'Templates', 'Community', 'Status'] },
+    { title: 'Legal', links: ['Privacy', 'Terms', 'Cookies', 'Licenses'] },
   ],
   legal: `© ${new Date().getFullYear()} Aiden`,
-  github: 'https://github.com/smking89/aiden',
+  app,
 }

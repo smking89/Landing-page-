@@ -24,9 +24,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
-            className="depth relative inline-flex h-8 items-center gap-2 rounded-[12px] bg-surface pl-2 pr-3 text-[13px] text-muted backdrop-blur transition-colors hover:text-fg"
+            className="depth relative inline-flex h-8 items-center gap-2 rounded-[12px] bg-white/[0.04] pl-2 pr-3 text-[13px] text-muted backdrop-blur transition-colors hover:text-fg"
           >
-            <Sparkles className="size-3.5 text-brand" />
+            <Sparkles className="size-3.5 text-accent" />
             {hero.badge}
             <ArrowRight className="size-3.5" />
           </motion.a>
@@ -86,7 +86,7 @@ export function Hero() {
         >
           <div
             aria-hidden
-            className="absolute -inset-x-10 -top-10 bottom-0 -z-10 rounded-[40px] bg-[radial-gradient(60%_50%_at_50%_0%,rgb(248_8_1/0.14),transparent)] blur-2xl"
+            className="absolute -inset-x-10 -top-10 bottom-0 -z-10 rounded-[40px] bg-[radial-gradient(60%_50%_at_50%_0%,rgb(248_8_1/0.22),transparent)] blur-2xl"
           />
           <DashboardMock />
           <div aria-hidden className="pointer-events-none absolute inset-x-0 -bottom-px h-40 bg-gradient-to-t from-bg to-transparent" />
